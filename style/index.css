@@ -1,0 +1,241 @@
+:root {
+    --branco: #f1f1f1;
+    --vermelho: #e50914;
+    --preta: #000;
+}
+
+body {
+    background-color: var(--preta);
+    color: var(--branco);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** HEADER STYLES ****/
+header .container {
+    z-index: 1;
+    position: relative;
+}
+
+
+header .container .content-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header .container .content-top  .logo a {
+    color: var(--vermelho);
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+header .container .content-top  nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container .content-top  nav a {
+    color: var(--branco);
+    display: block;
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.1rem;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/*** BANNER PÁGINA INICIO ***/
+
+header .container .banner {
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/** FORM STYLES PÁGINA INICIO **/
+
+.form-container {
+    margin: 120px auto;
+    max-width: 600px;
+    z-index: 1;
+    position: relative;
+}
+
+.form-container h1 {
+    color: var(--branco);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-container form span {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.form-container form label input {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
+.form-container form  button {
+    background-color: var(--vermelho);
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 20px;
+    width: 30%;
+}
+
+/** INDEX  PRINCIPAL STYLES **/
+
+.filme-principal {
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) 100%), url('../img/bg-principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    
+    flex-direction: column;
+    font-size: 16px;
+    
+    height: 100vh;
+
+    justify-content: center;
+    /* position: relative; */
+    /* top: -127px; */
+    opacity: 0.9;
+}
+
+
+.filme-principal .container {
+    padding: 30px;
+}
+
+.filme-principal .titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 0;
+}
+
+.filme-principal .botao {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.filme-principal .botao:nth-of-type(1) {
+    border: 1px solid var(--vermelho);
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+.filme-principal .botao:nth-of-type(2) {
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+}
+
+
+
+
+
+
+/*** SERIES STYLES **/
+
+.serie-principal {
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.90) 100%), url('../img/bg-series.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    
+    flex-direction: column;
+    font-size: 16px;
+    
+    height: 500px;
+
+    justify-content: center;
+    opacity: 0.9;
+}
+
+
+
+.serie-principal .container {
+    padding: 30px;
+}
+
+.serie-principal .titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.serie-principal .descricao {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 0;
+}
+
+.serie-principal .botao {
+    background-color: rgba(119, 119, 119, 0.1);
+    border: none;
+    cursor: pointer;
+    color: var(--branco);
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.box-filme {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+    /* top: -200px; */
+}
